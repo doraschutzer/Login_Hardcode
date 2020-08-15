@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/textview_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/usuario"
+        android:textAlignment="textStart"
+        android:textColor="#838383"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edittext_usuario_entrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_usuario"
+        android:hint="@string/usuario_entrada"
+        android:inputType="number"
+        android:backgroundTint="@android:color/holo_blue_bright"/>
+
+    <TextView
+        android:id="@+id/textview_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext_usuario_entrada"
+        android:layout_marginTop="30dp"
+        android:text="@string/senha"
+        android:textAlignment="textStart"
+        android:textColor="#838383"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edittext_senha_entrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_senha"
+        android:inputType="numberPassword"
+        android:backgroundTint="@android:color/holo_blue_bright"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="@string/login" />
+
+</RelativeLayout>
